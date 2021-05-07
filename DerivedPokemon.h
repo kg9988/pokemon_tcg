@@ -249,6 +249,121 @@ public:
  * End of Jordan's Pokémon
  * */
 
+/**
+ * Kim's Pokemon 
+ * */
+#pragmaonce
+class Lapras : public Pokemon {		// <-- Name your pokemon
+private:
+	string attack1Name;
+	string attack2Name;
+	string attack3Name;
+	Element* element;
+public:
+	Lapras() : 					// <-- Add the name of your pokemon to the constructor
+		Pokemon("Lapras", 100) {				// input name of pokemon as first parameter(string), total HP in second parameter (int)
+		this->attack1Name = "Aqua Bullet";		// <-- input the name of first attack; string type (string )
+		this->attack2Name = "Hydro Pump";		// <-- input the name of second attack; string type (string )
+		this->attack3Name = "Water Gun";		// <-- input the name of third attack or name it critical second attack; (string )
+		this->element = new Water();		// <--- input your pokemon's element TYPE
+								// elements to choose from: Psychic, Colorless, Fire, Grass, Water, Lightning 
+	}
+	~Lapras() {					// <-- add your pokemon's name to the constructor
+		delete element;
+		element = NULL;
+	}
+
+	Element* getElement() { return this->element; }
+	std::string getAttack1Name() { return this->attack1Name; }
+	std::string getAttack2Name() { return this->attack2Name; }
+	std::string getAttack3Name() { return this->attack3Name; }
+
+};
+
+class Suicune : public Pokemon {		// <-- Name your pokemon
+private:
+	string attack1Name;
+	string attack2Name;
+	string attack3Name;
+	Element* element;
+public:
+	Suicune() : 					// <-- Add the name of your pokemon to the constructor
+		Pokemon("Suicune", 80) {				// input name of pokemon as first parameter(string), total HP in second parameter (int)
+		this->attack1Name = "Water Gun";		// <-- input the name of first attack; string type (string )
+		this->attack2Name = "Hydro Pump";		// <-- input the name of second attack; string type (string )
+		this->attack3Name = "Critical Hydropump";		// <-- input the name of third attack or name it critical second attack; (string )
+		this->element = new Water();		// <--- input your pokemon's element TYPE
+								// elements to choose from: Psychic, Colorless, Fire, Grass, Water, Lightning 
+	}
+	~Suicune() {					// <-- add your pokemon's name to the constructor
+		delete element;
+		element = NULL;
+	}
+
+	Element* getElement() { return this->element; }
+	std::string getAttack1Name() { return this->attack1Name; }
+	std::string getAttack2Name() { return this->attack2Name; }
+	std::string getAttack3Name() { return this->attack3Name; }
+
+};
+
+class Arceus : public Pokemon {		// <-- Name your pokemon
+private:
+	string attack1Name;
+	string attack2Name;
+	string attack3Name;
+	Element* element;
+public:
+	Arceus() : 					// <-- Add the name of your pokemon to the constructor
+		Pokemon("Arceus",120) {				// input name of pokemon as first parameter(string), total HP in second parameter (int)
+		this->attack1Name = "Scratch";		// <-- input the name of first attack; string type (string )
+		this->attack2Name = "Judgement";		// <-- input the name of second attack; string type (string )
+		this->attack3Name = "Critical Judgement";		// <-- input the name of third attack or name it critical second attack; (string )
+		this->element = new Colorless();		// <--- input your pokemon's element TYPE
+								// elements to choose from: Psychic, Colorless, Fire, Grass, Water, Lightning 
+	}
+	~Arceus() {					// <-- add your pokemon's name to the constructor
+		delete element;
+		element = NULL;
+	}
+
+	Element* getElement() { return this->element; }
+	std::string getAttack1Name() { return this->attack1Name; }
+	std::string getAttack2Name() { return this->attack2Name; }
+	std::string getAttack3Name() { return this->attack3Name; }
+
+};
+
+class Zapdos : public Pokemon {		// <-- Name your pokemon
+private:
+	string attack1Name;
+	string attack2Name;
+	string attack3Name;
+	Element* element;
+public:
+	Zapdos() : 					// <-- Add the name of your pokemon to the constructor
+		Pokemon("Zapdos", 100) {				// input name of pokemon as first parameter(string), total HP in second parameter (int)
+		this->attack1Name = "Thunder Bolt";		// <-- input the name of first attack; string type (string )
+		this->attack2Name = "Shock";		// <-- input the name of second attack; string type (string )
+		this->attack3Name = "Thunder";		// <-- input the name of third attack or name it critical second attack; (string )
+		this->element = new Lightning();		// <--- input your pokemon's element TYPE
+								// elements to choose from: Psychic, Colorless, Fire, Grass, Water, Lightning 
+	}
+	~Zapdos() {					// <-- add your pokemon's name to the constructor
+		delete element;
+		element = NULL;
+	}
+
+	Element* getElement() { return this->element; }
+	std::string getAttack1Name() { return this->attack1Name; }
+	std::string getAttack2Name() { return this->attack2Name; }
+	std::string getAttack3Name() { return this->attack3Name; }
+
+};
+
+/**
+ * End of Kim's Pokémon
+ * */
 
 /**
  * Pokemon Template
